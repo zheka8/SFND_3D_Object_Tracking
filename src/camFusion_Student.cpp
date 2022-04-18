@@ -220,25 +220,24 @@ void computeTTCCamera(std::vector<cv::KeyPoint> &kptsPrev, std::vector<cv::KeyPo
     TTC = -dT / (1 - medianDistRatio);
 }
 
+bool compareLidarX(LidarPoint ptA, LidarPoint ptB) 
+{
+    return (ptA.x < ptB.x);
+}
 
 void computeTTCLidar(std::vector<LidarPoint> &lidarPointsPrev,
                      std::vector<LidarPoint> &lidarPointsCurr, double frameRate, double &TTC)
 {
-    // ignore potential outliers in order to get a more robust estimate by using the mean of all lidar points
-    // TO DO: potential improvement is to use some other threhsold, perhaps based on standard deviation
-    float prev{0};
-    float curr{0};
+    // ignore potential outliers in order to get a more robust estimate by using the median of all lidar points
+    sort(lidarPointsPrev.begin(), lidarPointsPrev.end(), compareLidarX);
+    sort(lidarPointsCurr.begin(), lidarPointsCurr.end(), compareLidarX);
 
-    for(auto point : lidarPointsPrev)
-        prev += point.x;
-    
-    for(auto point : lidarPointsCurr)
-        curr += point.x;
+    int nP = lidarPointsPrev.size() / 2;
+    int nC = lidarPointsCurr.size() / 2;
+    double medianPrev = (lidarPointsPrev.size() % 2) ? (lidarPointsPrev[nP-1].x + lidarPointsPrev[nP].x)/2 : lidarPointsPrev[nP].x;
+    double medianCurr = (lidarPointsCurr.size() % 2) ? (lidarPointsCurr[nC-1].x + lidarPointsCurr[nC].x)/2 : lidarPointsCurr[nC].x;
 
-    prev /= lidarPointsPrev.size();
-    curr /= lidarPointsCurr.size();
-
-    TTC = curr / (prev - curr) / frameRate;
+    TTC = medianCurr / (medianPrev - medianCurr) / frameRate;
 }
 
 void matchBoundingBoxes(std::vector<cv::DMatch> &matches, std::map<int, int> &bbBestMatches, DataFrame &prevFrame, DataFrame &currFrame)
