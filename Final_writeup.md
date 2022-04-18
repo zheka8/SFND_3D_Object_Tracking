@@ -20,13 +20,14 @@ Camera based TTC is computed using a threshold based on the median distance of k
 All Lidar TTC estimations seemed to be within reasonable values, ranging from about 16 seconds at the start and decreasing to about 8 seconds. Due to the use of the constant velocity model, these estimates will be somewhat off because the ego vehicle is undergoing deceleration. The constant velocity model is not a good model for use when the vehicle is undergoing acceleration, but it is easier compute. In the next section, various detectors and descriptor combinations are explored and compared to the Lidar TTC estimate.
 
 ## FP.6 Performance Eval 2
-Certain detector / descriptor combinations resulted in TTC values that seemed out of family with other camera TTC estimates and lidar TTC estimates. For example, Shi-Tomasi and BRIEF resulted in a 20s TTC whereas Lidar TTC was closer to 13 seconds. This is likely due to the number and quality of matches resulting form this detector / descriptor combination. In another case, Shi-Tomasi / FREAK resulted in a TTC of 11 seconds whereas the Lidar TTC for that frame was closer to 16 seconds. Similary, Harris / BRIKS resulted in a 9 second difference between Lidar and Camera TTC. In this case the number of keypoints detected was very low (~80) and is likely the cause of the large difference in TTC. Harris / BRIEF also resulted in a small number of keypoints and similarly had an outlier for a TTC. As did Harris / ORB,  Harris / FREAK, and Harris / SIFT.
+Certain detector / descriptor combinations resulted in TTC values that seemed out of family with other camera TTC estimates and lidar TTC estimates. For example, Shi-Tomasi and BRIEF resulted in a 20s TTC whereas Lidar TTC was closer to 13 seconds. This is likely due to the number and quality of matches resulting form this detector / descriptor combination. Similary, Harris / BRIKS resulted in a 9 second difference between Lidar and Camera TTC. In this case the number of keypoints detected was very low (~80) and is likely the cause of the large difference in TTC. Harris / BRIEF also resulted in a small number of keypoints and similarly had an outlier for a TTC. As did Harris / ORB,  Harris / FREAK, and Harris / SIFT.
 
 Based on the results, the top 5 detector / descriptor combinations are below:
 | Det |	 Desc	|  TTC Camera (avg)	| TTC Lidar (avg)|	 TTC Abs Delta (avg)|
 |-----|---------|-------------------|----------------|----------------------|
-|FAST	  |SIFT	|11.8415	|11.7444	|0.0971107|
-|SHITOMASI|ORB|	11.8925	|11.7444	|0.148146	|
-|SIFT	  |BRISK	|11.9215	|11.7444	|0.177155	|
-|FAST	  |ORB	|11.9354	|11.7444	|0.191041	|
-|FAST	  |BRIEF|	12.0361	|11.7444	|0.291723	|
+|FAST	 |FREAK	|11.6064	|11.7337	|0.127356|
+|BRISK	 |SIFT	|12.8017	|11.7337	|1.06794|
+|FAST	 |BRISK	|10.5796	|11.7337	|1.15409|
+|SHITOMASI	 |FREAK	|13.6896	|11.7337	|1.95586|
+|SHITOMASI	 |BRISK	|14.0053	|11.7337	|2.27155|
+
