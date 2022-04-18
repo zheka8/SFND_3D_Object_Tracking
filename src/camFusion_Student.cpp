@@ -146,7 +146,7 @@ void clusterKptMatchesWithROI(BoundingBox &boundingBox, std::vector<cv::KeyPoint
     {
         if (boundingBox.roi.contains(kptsCurr[match.trainIdx].pt)) 
         {
-            meanDist += match.distance;
+            meanDist += cv::norm(kptsCurr[match.trainIdx].pt - kptsPrev[match.queryIdx].pt);
             numKpts++;
         }
     }
@@ -157,7 +157,7 @@ void clusterKptMatchesWithROI(BoundingBox &boundingBox, std::vector<cv::KeyPoint
     // only keep the points within a threshold
     for (auto match : kptMatches)
     {
-        if (boundingBox.roi.contains(kptsCurr[match.trainIdx].pt) && match.distance < threshold)
+        if (boundingBox.roi.contains(kptsCurr[match.trainIdx].pt) && cv::norm(kptsCurr[match.trainIdx].pt - kptsPrev[match.queryIdx].pt) < threshold);
         {
             boundingBox.keypoints.push_back(kptsCurr[match.trainIdx]);
             boundingBox.kptMatches.push_back(match);

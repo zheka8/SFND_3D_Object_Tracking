@@ -1,15 +1,50 @@
 Detector/Descriptor: SHITOMASI / BRISK
 Total keypoints over all images: 0
 Total matched keypoints over all images: 0
-Total time for all images: 47277 ms
+Total time for all images: 81411.1 ms
 
 Detector/Descriptor: SHITOMASI / BRIEF
 Total keypoints over all images: 0
 Total matched keypoints over all images: 0
-Total time for all images: 35578.9 ms
+Total time for all images: 75920.7 ms
 
 Detector/Descriptor: SHITOMASI / ORB
 Total keypoints over all images: 0
 Total matched keypoints over all images: 0
-Total time for all images: 45364.4 ms
+Total time for all images: 70593.5 ms
+
+Detector/Descriptor: SHITOMASI / FREAK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 82653 ms
+
+Detector/Descriptor: SHITOMASI / SIFT
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 81783.8 ms
+
+Detector/Descriptor: HARRIS / BRISK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 42685.5 ms
+
+Detector/Descriptor: HARRIS / BRIEF
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 36682.1 ms
+
+Detector/Descriptor: HARRIS / ORB
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 37000.9 ms
+
+Detector/Descriptor: HARRIS / FREAK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 38054.9 ms
+
+Detector/Descriptor: HARRIS / SIFT
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 38061 ms
 
