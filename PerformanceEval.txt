@@ -1,0 +1,135 @@
+Detector/Descriptor: SHITOMASI / BRISK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 43632.6 ms
+
+Detector/Descriptor: SHITOMASI / BRIEF
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 34232.9 ms
+
+Detector/Descriptor: SHITOMASI / ORB
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 34135.8 ms
+
+Detector/Descriptor: SHITOMASI / FREAK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 36598.9 ms
+
+Detector/Descriptor: SHITOMASI / SIFT
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 37874.5 ms
+
+Detector/Descriptor: HARRIS / BRISK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 43866 ms
+
+Detector/Descriptor: HARRIS / BRIEF
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 38261.9 ms
+
+Detector/Descriptor: HARRIS / ORB
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 36127.4 ms
+
+Detector/Descriptor: HARRIS / FREAK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 36874.2 ms
+
+Detector/Descriptor: HARRIS / SIFT
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 36035.2 ms
+
+Detector/Descriptor: FAST / BRISK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 57201.7 ms
+
+Detector/Descriptor: FAST / BRIEF
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 46576.5 ms
+
+Detector/Descriptor: FAST / ORB
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 45666.6 ms
+
+Detector/Descriptor: FAST / FREAK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 48230.7 ms
+
+Detector/Descriptor: FAST / SIFT
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 58674.1 ms
+
+Detector/Descriptor: BRISK / BRISK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 56089.6 ms
+
+Detector/Descriptor: BRISK / BRIEF
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 48602.5 ms
+
+Detector/Descriptor: BRISK / ORB
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 48441.7 ms
+
+Detector/Descriptor: BRISK / FREAK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 50276.7 ms
+
+Detector/Descriptor: BRISK / SIFT
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 59125 ms
+
+Detector/Descriptor: ORB / BRISK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 41471.6 ms
+
+Detector/Descriptor: ORB / BRIEF
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 34022.6 ms
+
+Detector/Descriptor: ORB / ORB
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 33581.3 ms
+
+Detector/Descriptor: ORB / FREAK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 34719.7 ms
+
+Detector/Descriptor: ORB / SIFT
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 38778.3 ms
+
+Detector/Descriptor: SIFT / BRISK
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 47866.3 ms
+
+Detector/Descriptor: SIFT / BRIEF
+Total keypoints over all images: 0
+Total matched keypoints over all images: 0
+Total time for all images: 40118.4 ms
+
